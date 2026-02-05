@@ -1,0 +1,27 @@
+[project]
+name = "mpm-explosion"
+version = "0.1.0"
+description = "Simulation of the effect of explosion to buildings."
+readme = "README.md"
+authors = [
+    { name = "EvanLuo42", email = "evanluo@cs.ucsb.edu" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.2",
+    "pillow>=12.1.0",
+    "rtree>=1.4.1",
+    "taichi>=1.7.4",
+    "trimesh>=4.11.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.28,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.15.0",
+    "ty>=0.0.15",
+]
